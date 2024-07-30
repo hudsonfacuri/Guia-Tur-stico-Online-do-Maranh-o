@@ -21,7 +21,7 @@
     <main class="Conteudo">
         <div class="Conteudo__texto">
             <h1 class="Titulo">MaraTour: O Guia Turístico do Maranhão</h1>
-            <p class="Descricao">Lorem, ipsum dolor sit amet consectetur adipisicing 
+            <p class="titulo_descricao">Lorem, ipsum dolor sit amet consectetur adipisicing 
                 elit. Quam ipsam vitae debitis dicta nemo maxime libero delectus 
                 iusto officia sed! Inventore error esse perferendis obcaecati, 
                 deleniti eos dolores voluptate! Et?</p>
@@ -29,35 +29,54 @@
         <div class="slider">
             <div class="slides">
 
-            <div class="slide">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
                 <img src="imagens/pontos_turisticos/home_imgs/imagem_1.jpg" alt="imagem 1">
             </div>
             <div class="slide">
                 <img src="imagens/pontos_turisticos/home_imgs/imagem_2.jpg" alt="imagem 2">
             </div>
             <div class="slide">
-                <img src="imagens/pontos_turisticos/home_imgs/imagem_3.jpg" alt="imagem 3">
+                <img src="imagens/pontos_turisticos/home_imgs/imagem_3.jpeg" alt="imagem 3">
             </div>
             <div class="slide">
                 <img src="imagens/pontos_turisticos/home_imgs/imagem_4.jpg" alt="imagem 4">
             </div>
 
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
             </div>
 
         </div>
-        <div class="B_pesquisa" id="divBusca">
+        <div class="B_pesquisa" id="barra_pesquisa">
             <input type="text" id="txtBusca" placeholder="Pesquise aqui"/>
-            <img src="imagens/icones/" id="btnBusca" alt="Buscar"/>
+            <img src="imagens/icones/btn_pesquisa.png" id="btnBusca" alt="Buscar"/>
         </div>
     </main>
 
-    
     <script src="main.js"></script>
     <script src="scripts.json"></script>
+
 </body>
-<footer>
-    <img src="imagens/Logo_Trilhas.png" alt="Logo Trilhas">
-    <a class="" href="https://github.com/Carol091405" target="_blank">
+<footer class="rodape">
+    <img src="imagens/icones/logo_trilhas.png" alt="Logo Trilhas">
+    <a class="" href="https://www.instagram.com/sectimaranhao/" target="_blank">
         <img src="imagens/icones/insta.png" alt="Logo Instagram">
         @MaraTour</a>
     <h3 class="texto__rodape">Desenvolvido por H.A.R</h3>
