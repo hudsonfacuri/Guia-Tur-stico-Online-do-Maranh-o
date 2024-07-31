@@ -1,7 +1,7 @@
 // funcionamento do slider da home
 
 let count = 1;
-document.getElementsById("radio1").cheked = true;
+document.getElementById("radio1").checked = true;
 
 setInterval( function(){
     nextImage();
@@ -12,7 +12,7 @@ function nextImage(){
     if(count > 4){
         count = 1;
     }
-    document.getElementsById("radio"+count).cheked = true;
+    document.getElementById("radio"+count).checked = true;
 }
 
 //fim
