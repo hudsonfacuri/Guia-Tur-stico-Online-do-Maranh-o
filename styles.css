@@ -40,6 +40,10 @@ body{
 }
 
 .cabecalho__menu{
+    padding: 1% 1% 0% 0%;
+}
+
+.cabecalho__menu{
     display: flex;
     justify-content:left;
     gap: 64px;
@@ -187,4 +191,22 @@ body{
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #000;
+}
+
+.rodape{
+    font-family: var(--fonte-secundaria);
+    font-weight: 100;
+    color: var(--cor-secudaria);
+    text-align: center;
+    font-size: 1rem;
+    padding: 24px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 3px var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
