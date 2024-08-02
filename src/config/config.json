@@ -1,0 +1,26 @@
+{
+  "development": {
+    "storage": "./bdcidades.sql",
+    "username": "root",
+    "password": "Admin",
+    "database": "cidades",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "storage": "./bdcidades.sql",
+    "username": "root",
+    "password": "Admin",
+    "database": "cidades",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "storage": "./bdcidades.sql",
+    "username": "root",
+    "password": "Admin",
+    "database": "cidades",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

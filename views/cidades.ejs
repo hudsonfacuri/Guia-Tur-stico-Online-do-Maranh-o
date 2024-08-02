@@ -38,11 +38,22 @@
             <h3 class="pontos_nome" id="ponto_3"></h3>
         </div>
     </div>
-
-
-    <script src="main.js"></script>
-    <script src="scripts.json"></script>
-    
+   <table> 
+    <tr>
+        <th>Nome</th>
+        <th>Estado</th>
+        <th>População</th>
+    </tr>
+    <% resposta.forEach(function(cidade){ %>
+        <tr>
+            <td> <%= cidade.Nome %></td>
+            <td> <%= cidade.Estado %></td>
+            <td> <%= cidade.População %></td>
+        </tr>
+        <% }); %>
+   </table>
+   <script src="main.js"></script>
+   <script src="scripts.json"></script>
 </body>
 <footer>
     <img src="imagens/icones/logo_trilhas.png" alt="Logo Trilhas">

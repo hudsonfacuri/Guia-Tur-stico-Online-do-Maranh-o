@@ -34,14 +34,14 @@ INSERT INTO Cidade (Nome, População, Descrição) VALUES
 
 -- Inserção de pontos turísticos e suas imagens (use LOAD_FILE para carregar as imagens)
 INSERT INTO PontoTuristico (Nome, ImagemURL, ID_Cidade) VALUES 
-('Basílica de São Sebastião', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem1_carutapera.jpg'), 1),
-('Praia de São Pedro', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem2_carutapera.jpg'), 1),
-('Beira Rio', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem1_imperatriz.jpg'), 2),
-('Panelódromo', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem2_imperatriz.jpg'), 2),
-('Praia do Meio', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem3_imperatriz.jpg'), 2),
-('Litorânea', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem1_sao_luis.jpg'), 3),
-('Teatro Arthur Azevedo', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem2_sao_luis.jpg'), 3),
-('Igreja da Sé - Centro Histórico', LOAD_FILE('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/imagem3_sao_luis.jpg'), 3);
+('Basílica de São Sebastião', LOAD_FILE('imagem1_carutapera.jpg'), 1),
+('Praia de São Pedro', LOAD_FILE('imagem2_carutapera.jpg'), 1),
+('Beira Rio', LOAD_FILE('imagem1_imperatriz.jpg'), 2),
+('Panelódromo', LOAD_FILE('imagem2_imperatriz.jpg'), 2),
+('Praia do Meio', LOAD_FILE('imagem3_imperatriz.jpg'), 2),
+('Litorânea', LOAD_FILE('imagem1_sao_luis.jpg'), 3),
+('Teatro Arthur Azevedo', LOAD_FILE('imagem2_sao_luis.jpg'), 3),
+('Igreja da Sé - Centro Histórico', LOAD_FILE('imagem3_sao_luis.jpg'), 3);
 
 -- Inserção de pesquisas
 INSERT INTO Pesquisa (Data_Pesquisa, Resultado, ID_Cidade) VALUES 
