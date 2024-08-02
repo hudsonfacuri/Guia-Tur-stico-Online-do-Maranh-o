@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Sobre</title>
 </head>
 <body>
@@ -18,32 +19,45 @@
         </nav>
     </header>
     <h1>Sobre os desenvolvedores</h1>
-    <main class="conteudo_sobre">
-        <img class="fotos_integrantes" src="imagens/integrantes/foto_carol.jpeg" alt="foto de Carol">
-        <h2 class="nomes_integrantes">Carol Vieira</h2>
-        <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-           Sapiente nostrum at perferendis quas in repellat possimus 
-           tenetur incidunt cupiditate nobis! Incidunt enim voluptatem, 
-           beatae culpa modi exercitationem voluptate nesciunt voluptatibus.</p>
-        <img class="fotos_integrantes" src="imagens/integrantes/hudson.jpg" alt="foto de Hudson">
-        <h2 class="nomes_integrantes">Hudson Facuri</h2>
-        <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Sapiente nostrum at perferendis quas in repellat possimus 
-            tenetur incidunt cupiditate nobis! Incidunt enim voluptatem, 
-            beatae culpa modi exercitationem voluptate nesciunt voluptatibus.</p>
-        <img class="fotos_integrantes" src="imagens/integrantes/ruan.jpg" alt="foto de Ruan">
-        <h2 class="nomes_integrantes">Ruan Tadeu</h2>
-        <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Sapiente nostrum at perferendis quas in repellat possimus 
-            tenetur incidunt cupiditate nobis! Incidunt enim voluptatem, 
-            beatae culpa modi exercitationem voluptate nesciunt voluptatibus.</p>
-    </main>
+<main class="conteudo__sobre">
+    <div class="integrantes">
+        <img class="fotos_integrantes" src="imagens/integrantes/foto_carol.jpeg" alt="foto de Carol" height="300px" width="300px">
+        <div class="texto__sobre">
+            <h2 class="nomes_integrantes">Carol Vieira</h2>
+            <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
+           Sapiente nostrum at perferendis quas in repellat possimus<br> 
+           tenetur incidunt cupiditate nobis! Incidunt enim voluptatem,<br> 
+           beatae culpa modi exercitationem voluptate nesciunt voluptatibus.<br></p>
+        </div>
+    </div>
+    <div class="integrantes">
+        <img class="fotos_integrantes" src="imagens/integrantes/hudson.jpg" alt="foto de Hudson" height="300px" width="300px">
+        <div class="texto__sobre">
+            <h2 class="nomes_integrantes">Hudson Facuri</h2>
+            <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
+            Sapiente nostrum at perferendis quas in repellat possimus<br> 
+            tenetur incidunt cupiditate nobis! Incidunt enim voluptatem,<br> 
+            beatae culpa modi exercitationem voluptate nesciunt voluptatibus.<br></p>
+        </div>
+    </div>
+    <div class="integrantes">
+        <img class="fotos_integrantes" src="imagens/integrantes/ruan.jpg" alt="foto de Ruan" height="300px" width="300px">
+        <div class="texto__sobre">
+            <h2 class="nomes_integrantes">Ruan Tadeu</h2>
+            <p class="descricao_integrantes">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> 
+            Sapiente nostrum at perferendis quas in repellat possimus<br> 
+            tenetur incidunt cupiditate nobis! Incidunt enim voluptatem,<br> 
+            beatae culpa modi exercitationem voluptate nesciunt voluptatibus.<br></p>
+        </div>
+    </div>
+</main>
+
     <script src="main.js"></script>
 </body>
 <footer class="rodape">
     <img src="imagens/icones/logo_trilhas.png" alt="Logo Trilhas">
     <a class="" href="https://www.instagram.com/sectimaranhao/" target="_blank">
-        <img src="imagens/icones/insta.png" alt="Logo Instagram">
+        <img src="imagens/icones/insta.png" class="insta__rodape" alt="Logo Instagram">
         @MaraTour</a>
     <h3 class="texto__rodape">Desenvolvido por H.A.R</h3>
 </footer>

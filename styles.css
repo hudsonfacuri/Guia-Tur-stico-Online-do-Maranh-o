@@ -90,6 +90,32 @@ body{
     margin-bottom: 80px;
 }
 
+.slider {
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    flex: 1 0 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir toda a área do slide */
+}
+/*gepeto slide tela toda*/
+
+/*
 .slider{
     margin: 0 auto;
     width: 1200px;
@@ -116,6 +142,8 @@ body{
 .slide img{
     width: 1200px;
 }
+
+*/
 
 .manual-navigation{
     position: absolute;
@@ -191,6 +219,23 @@ body{
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #000;
+}
+
+.conteudo__sobre{
+    padding: 6% 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+.integrantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.texto__sobre{
+    flex-direction: row;
 }
 
 .rodape{
