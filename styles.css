@@ -12,6 +12,12 @@ body{
     box-sizing: border-box;
 } 
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 #barra_pesquisa{
     background-color:#2F4F4F;
     border:solid 1px;
@@ -21,9 +27,10 @@ body{
   
 #txtBusca{
     float:left;
+    color: #FFFFFF;
     background-color:transparent;
     padding-left:5px;
-    font-style:italic;
+    font-style:oblique;
     font-size:18px;
     border:none;
     border-radius:15px;
@@ -31,6 +38,9 @@ body{
     width:260px;
   }
 
+#btnBusca:hover{
+    color: transparent;
+}
 /*estilização da barra de pesquisa acima*/
 
 :root{
@@ -65,52 +75,53 @@ body{
 }
 
 .cabecalho__pag:hover{
-    color: var(--cor-secudaria);
+    color: var(--cor-secundaria);
 }
 
 .Conteudo__texto{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     align-items: center;
+    border: 2px solid var(--cor-quartenaria);
+    border-radius: 5px;
+    background-color: var(--cor-quartenaria);
 }
 
 .Titulo{
     font-family: var(--fonte-primaria);
     font-size: 2.25rem;
     font-weight: 300;
-    color: var(--cor-secudaria);
-    line-height: 30px;
+    color: #2F4F4F;
+    line-height: 15px;
     text-align: left;
+    border-bottom: 2px dashed var(--cor-terciaria);
+    padding-bottom: 20px;
 }
 
 .titulo__descricao{
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-quartenaria);
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 36px;
-    text-align: left;
-    margin-bottom: 80px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 15px;
 }
-
-.Conteudo__texto{
-    position: relative;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: left;
-  }
 
 .slider{
     position: relative;
     margin: 0 auto;
-    width: 1200px;
+    width: 1800px;
     height: 1200px;
     overflow: hidden;
+    align-items: center;
 }
 
 .slides{
     width: 400%;
-    height: 1200px;
+    height: 1150px;
     display: flex;
+    margin-top: 20px;
 }
 
 .slides input {
@@ -124,12 +135,12 @@ body{
 }
 
 .slide img{
-    width: 1200px;
+    width: 1800px;
 }
 
 .manual-navigation{
     position: absolute;
-    width: 1200px;
+    width: 1800px;
    /* margin-top: -40px; */
     display: flex;
     justify-content: center;
@@ -228,20 +239,21 @@ body{
 .nomes__integrantes{
     color:var(--cor-secundaria);
     font-family: var(--fonte-primaria);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.875rem;
 }
 
 .texto__sobre{
     flex-direction: row;
-    color: var(--cor-primaria);
+    color: var(--cor-quinaria);
     font-family: var(--fonte-secundaria);
     font-size: 1.375rem;
+    font-weight: 600;
 }
 
 .fotos__integrantes{
     border-radius: 25%;
-    border: 2px solid var(--cor-quartenaria);
+    border: 5px solid var(--cor-quartenaria);
 }
 
 .hudson{
