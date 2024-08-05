@@ -8,7 +8,7 @@ body{
     height: 100vh;
     background-image: url("imagens/icones/logo_maratour.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 60% top;
     box-sizing: border-box;
 } 
 
@@ -16,8 +16,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #barra_pesquisa{
@@ -296,6 +296,9 @@ body{
     font-family: var(--fonte-primaria);
     font-weight: 600;
     font-size: 1.875rem;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .populacao{
@@ -303,6 +306,8 @@ body{
     font-size: 1rem;
     font-family: var(--fonte-primaria);
     font-weight: 200;
+    margin: 0;
+    margin-left: 20px;
 }
 
 .descricao{
@@ -310,13 +315,37 @@ body{
     font-family: var(--fonte-secundaria);
     font-size: 1.375rem;
     font-weight: 600;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 5px;
 }
 
 .imagens_pontos{
   display: flex;
   justify-content: center;
-  gap:90px;
-    
+  gap:175px;
+}
+
+.pontos_fonte{
+    color: #000000;
+    margin: 0;
+    font-weight:800;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+}
+
+.pontos_nome{
+    color: var(--cor-quinaria);
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight:800;
+    font-family: var(--fonte-primaria);
+    font-size: 1.725rem;
+    display: flex;
+    justify-content: center;
 }
 
 .pontos{
