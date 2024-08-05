@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa com Leaflet e OpenStreetMap</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Mapa Turístico do Maranhão</h3>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-2.5297, -44.3028], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © OpenStreetMap contributors'
+        }).addTo(map);
+
+        var cities = [
+            {name: 'São Luís', lat: -2.5297, lng: -44.3028},
+            {name: 'Imperatriz', lat: -5.5266, lng: -47.4717},
+            {name: 'Carutapera', lat: -1.1969, lng: -46.0208}
+        ];
+
+        cities.forEach(function(city) {
+            L.marker([city.lat, city.lng]).addTo(map)
+                .bindPopup(city.name)
+                .openPopup();
+        });
+    </script>
+</body>
+</html>
