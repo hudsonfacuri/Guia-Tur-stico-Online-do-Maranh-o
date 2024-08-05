@@ -352,6 +352,17 @@ body{
     flex-direction: row;
 }
 
+.mapa_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nome_mapa{
+    color: var(--cor-primaria);
+}
+
 .rodape{
     font-family: var(--fonte-secundaria);
     font-weight: 100;
