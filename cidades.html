@@ -17,33 +17,47 @@
                 Sobre</a>
         </nav>
     </header>
+    
+    <div class="container">
     <div class="B_pesquisa" id="barra_pesquisa">
         <input type="text" id="txtBusca" placeholder="Pesquise aqui"/>
         <img src="imagens/icones/btn_pesquisa.png" id="btnBusca" alt="Buscar"/>
     </div>
+    </div>
+
     <div class="cidade_conteudo" id="cidade_content">
-        <h1 class="cidade" id="cidade"></h1>
-        <h2 class="populacao" id="populacao"></h2>
-        <p class="descricao" id="descricao"></p>
+        <div class="texto_cidade">
+            <h1 class="cidade" id="cidade">blabla</h1>
+            <h2 class="populacao" id="populacao">198878328902</h2>
+            <p class="descricao" id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maxime mollitia assumenda, provident temporibus, deleniti eligendi, quos est impedit dicta corporis error laudantium et blanditiis sequi placeat nisi laborum. Nobis.</p>
+        </div>
         <div class="imagens_pontos" id="imagens_pontos">
-            <img src="" id="img_1">
-            <h5 class="pontos_fonte" id="ponto_1"></h5>
-            <h3 class="pontos_nome" id="ponto_1"></h3>
-            <img src="" id="img_2">
-            <h5 class="pontos_fonte" id="ponto_2"></h5>
-            <h3 class="pontos_nome" id="ponto_2"></h3>
-            <img src="" id="img_3">
-            <h5 class="pontos_fonte" id="ponto_3"></h5>
-            <h3 class="pontos_nome" id="ponto_3"></h3>
+            <div class="pontos">
+                <img src="/imagem1_carutapera.jpg" id="img_1" widht="200px" height="200px">
+                <h5 class="pontos_fonte" id="ponto_1">google</h5>
+                <h3 class="pontos_nome" id="ponto_1">lugar</h3>
+            </div>
+            <div class="pontos">
+                <img src="/imagem1_carutapera.jpg" id="img_2" widht="200px" height="200px">
+                <h5 class="pontos_fonte" id="ponto_2">google</h5>
+                <h3 class="pontos_nome" id="ponto_2">lugar</h3>
+            </div>
+            <div class="pontos">
+                <img src="/imagem1_carutapera.jpg" id="img_3" widht="200px" height="200px">
+                <h5 class="pontos_fonte" id="ponto_3">google</h5>
+                <h3 class="pontos_nome" id="ponto_3">lugar</h3>
+            </div>
         </div>
     </div>
 
+    <!--área para colocar o mapa,vai ser a última coisa da página, 
+    pode escrever o html ai do jeito que achar melhor-->
 
     <script src="main.js"></script>
     <script src="scripts.json"></script>
     
 </body>
-<footer>
+<footer class="rodape">
     <img src="imagens/icones/logo_trilhas.png" alt="Logo Trilhas" width="100px" height="100px">
     <a class="insta" href="https://www.instagram.com/sectimaranhao/" target="_blank">
         <img src="imagens/icones/insta.png" class="insta__rodape" alt="Logo Instagram">

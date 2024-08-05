@@ -16,6 +16,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #barra_pesquisa{
@@ -215,7 +217,7 @@ body{
 }
 
 .conteudo__sobre{
-    padding: 6% 6%;
+    padding: 4% 4%;
     display: flex;
     flex-direction: column;
 }
@@ -224,7 +226,7 @@ body{
     font-family: var(--fonte-primaria);
     font-size: 2.25rem;
     color: var(--cor-secundaria);
-    margin-left: 100px;
+    margin-left: 115px;
     margin-top: 100px;
 }
 
@@ -245,10 +247,18 @@ body{
 
 .texto__sobre{
     flex-direction: row;
+    background-color: var(--cor-quartenaria);
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5%;
+}
+
+.descricao__integrantes{
     color: var(--cor-quinaria);
     font-family: var(--fonte-secundaria);
     font-size: 1.375rem;
     font-weight: 600;
+    text-justify: auto;
 }
 
 .fotos__integrantes{
@@ -257,10 +267,60 @@ body{
 }
 
 .hudson{
-    margin-left: 1000px;
+    margin-left: 800px;
     align-items: center;
     display: flex;
     gap: 50px;
+}
+
+/*estilização de cidades*/
+
+.cidade_conteudo{
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 2%;
+    border: 3px solid var(--cor-terciaria);
+    background-color: var(--cor-quartenaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto_cidade{
+    display: flex;
+    flex-direction: column;
+}
+
+.cidade{
+    color:var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1.875rem;
+}
+
+.populacao{
+    color:var(--cor-terciaria);
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+}
+
+.descricao{
+    color: var(--cor-quinaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.imagens_pontos{
+  display: flex;
+  justify-content: center;
+  gap:90px;
+    
+}
+
+.pontos{
+    flex-direction: row;
 }
 
 .rodape{
